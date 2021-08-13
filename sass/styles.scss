@@ -1,0 +1,515 @@
+
+/*APLICANDO VARIABLES*/
+@import"../libs/boostrap/scss/bootstrap.scss";
+@import ".//partials/fuentes";
+@import "../libs/boostrap/scss/variables";
+@import"../libs/boostrap/scss/grid";
+@import"../libs/boostrap/scss/reboot";
+@import"../libs/boostrap/scss/utilities";
+
+
+$principal-color:rgb(7, 7, 7); 
+$secondary-color:black;
+$terciary-color:rgb(206, 17, 17);
+$font-color:white;
+$box-shadow:0 2px 10px 0 grey 0;
+$limit:10;
+$unit:8px;
+$solotexto:soloEstoyProbando;
+
+/*Funciones remplazando*/
+@function size($value){
+    @return $value * $unit;
+}
+/*APLICANDO MIXIN*/
+@mixin  reset-pm {padding: 0;
+    margin: 0;
+    
+}
+@mixin btn ($background-color,$color,$bold){
+    background-color: $background-color;
+    color: $color;
+    border-radius: 50px;
+    padding: 20px 3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @if ($bold = 'true') {font-weight: bolder;
+        
+    }
+}
+
+section .probando{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+    @if ($solotexto==soloEstoyProbando) {
+        background-color: #2d688b;
+
+    }
+    @else if($solotexto==PuebaUno)
+    {background-color: #ff0601;}
+    @else if ($solotexto==prueba2)
+    {background-color: #0c1cca;}
+    @else {background-color: #d3cbcb;}
+}
+}
+
+$enable-rounded: false; /*su valor real es true*/
+$enable-shadows: true ;/*pequeña sombra*/
+$enable-gradients:true;/*Degradado o gradiente */
+/*juego con el boton*/
+$btn-padding-y: .8rem;              
+$btn-padding-x: 1.5rem;        
+$btn-border-radius: 1rem;    
+$btn-font-family:arial; /*Fuente xD*/
+
+/**VOY A DEFINIR PATRON DE COLORES**/
+
+$primary: $principal-color;  /*VOY A MODIFICARLES LAS VARIABLES NATIVAS DE BOOSTRAP MODIFIQUE EL AZUL NATIVO EN ESTE CASO*/
+
+*{
+    @include reset-pm(0,0);
+    box-sizing: border-box;
+}
+body{
+    background-color: $principal-color;
+}
+a{
+    color:$secondary-color;
+    text-decoration:none;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: size(6);/*Funciones remplazando*/
+}
+
+h3{
+    font-weight: lighter;
+    font-size: size(3);/*Funciones remplazando*/
+}
+
+
+
+.btn-primary{
+    border-bottom: 3ox solid rgba(0,0,0,0.27);
+}
+
+
+
+
+
+body{
+    background-color:transparent;
+    color:rgb(236, 230, 230);
+}
+
+
+hr {
+    opacity: 1
+    width $widthn1 
+    height 15px !important;
+    background-color: linear-gradient(to right, #0497f8, #111b80)
+    margin auto
+
+
+}
+
+.img-logo{
+    width: 200px ;
+    height: 200px;
+}
+
+.servicio-fila{
+    width: $widthn1 !important;
+    text-align: center;
+}
+
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+
+    }
+}
+
+@media(max-width:1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: $widthn1;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+
+.map{
+    width: $widthn1;
+    height: 500px;
+}
+
+#local{
+    background-color: $colorblanco;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+#numeros-local div{
+    padding: 0 20px 0 0;
+    height: 48px;
+}
+
+#numeros-local div:not(last-child){
+    border-right:$colornergro;
+}
+
+#numeros-local div:not(:first-child){
+    padding-left: 20px;
+}
+
+#numeros-local p{
+    margin: 0;
+}
+
+/*cursos*/
+
+#main-cursos{
+    background-color: #0497f8;
+    color: $colorblanco;
+    width: $widthn1 !important;
+    padding: 70px;
+}
+
+.banner {color: $colorblanco;
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 40px;
+    margin-top: none;
+    
+    
+}
+h3 {
+
+    color: $colornergro;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 50px;
+    padding: 5px;
+    text-align:start ;
+
+}
+
+.tipo{
+    justify-content: end;
+    padding-top: 40px;
+}
+
+#descuentos{
+    background-color: #0497f8 !important;
+    color: red;
+    background: local;
+    display: flex;
+}
+
+h5{
+    color:$colornergro;
+    border: none;
+    text-align: left;
+    height: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    font-size: 20px;
+}
+
+h4{
+font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+/*APLICANDO PORPIEDADES DE SASS*/
+
+ul{ 
+    list-style: none;
+
+    li{
+        list-style: none;
+        display: inline-block;
+        padding: 15px;
+
+        /*NEFTING EN TEXTO*/
+
+        a {
+            @include btn($terciary-color,$secondary-color,'true');
+            box-shadow: $box-shadow;
+            color: red;
+            font-size:$font-size;
+            text-decoration: none;
+            transform:uppercase;
+            text-align: center;
+            background-color:transparent; 
+        &:hover {@include btn($secondary-color,$terciary-color,'false') }}
+        
+        } 
+
+       
+    }
+
+/*
+ul {
+    list-style: none;
+    li {
+        padding: 15;
+        display: inline-block;
+        a{
+            text-decoration: none;
+            font-size:$font-size;
+            color:$color-principal;
+        }
+        a:hover{
+            color: red;
+        }
+    }
+}
+*/
+
+
+.img-logo{
+    width: 200px ;
+    height: 200px;
+}
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+    color: #131212;
+
+}
+
+.bg-dark{
+    background-color: var(--dark) !important;
+}
+
+h1{
+    color: #ffffff;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+}
+
+.bg-dark-x{
+    background-color: rgb(248, 239, 239);
+    border:none;
+}
+
+
+.form-control ,btn {
+    min-height: 3.125rem;
+    line-height: initial;
+
+}
+
+.img-1{
+    background-image: url("..//img/jonas-leupe-dk4OR4Ap_c4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2{
+    background-image: url("https://www.yorokobu.es/src/uploads/2017/08/IPHONE12.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.btn{
+    color: #ffffff;
+
+
+}
+
+
+/*BEM*/
+*{
+   @include reset-pm();
+    box-sizing: border-box;
+}
+
+.contenedora{
+    max-width: 1000px;
+    width:90%;
+    margin:0  auto;
+    color: #000000;
+
+
+&.contenedora__card{
+    background-color: #faf8f8;
+    color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-flexbox;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+&.contenedora__thumbnail{
+    width: 650;
+    height: 200px;
+    background-color: #131212;
+    color: #000000;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+&.contenedora__titulo{
+    
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+
+ }
+
+&.contenedora__enlace{
+    color: #131212;
+
+}
+&.contenedora__parrafo{
+    background-color: #ffffff;
+    line-height: 28px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}}
+
+.boton{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    background: #131212;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: slateblue;
+    transition: .3s ease all;
+}
+.boton__icono{
+    width: 100px;
+    font-size: 40px;
+}
+.boton:hover{
+    background: burlywood;
+    text-decoration: none;
+}
+.boton--absolute{
+    position: absolute;
+    right: 50px;
+    bottom: -25px;
+}
+
+.boton__texto{
+    font-weight: 600;
+}
+
+.frase{
+    text-align: center;
+    margin: 70px 0;
+
+&.frase__texto{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+}
+
+/*Para los ultimos 3 botones*/
+.tecnicos{
+    border-radius: 50%;
+    width: 250px;
+    flex: 0 1 200px;
+    text-align: center;
+     margin: 0 10px; 
+}
+
+.compras{
+text-align: center;}
+
+.btn { 
+    color: #fff;
+    background-color: #3bb1f5;
+    padding: 8px 12px;
+    border: 1px solid #2d688b;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    &.btn__icon {
+        display: inline-block;
+        margin-right: 4px;
+    }
+    &:hover{
+        @include btn($terciary-color,$secondary-color ,'true' );
+        box-shadow: $box-shadow;
+    }
+    &.btn--success {
+        
+        background-color: green;
+        color: #ffffff;
+        border: 2px solid green;
+        border-radius: 0.25rem;
+    }
+    &.btn--danger {
+        @include btn($principal-color,$secondary-color ,'true' );
+        background-color: #f05654;
+        border: 1px solid #e00400; 
+    }
+    &:hover{
+        @include btn($secondary-color,$terciary-color,'true');
+        box-shadow: $box-shadow;}
+        &:hover{@include btn ($terciary-color,$secondary-color ,'true' )}
+    }
+
+    .feature__text {
+        font-size: x-large !important;
+        color: #000000 1px solid;
+        font-family:cursive ;
+    }
+
+    @for $i from 1 to $limit{
+
+    .m-#{$i}{margin: $i*$unit}
+.p-#{$i}{
+    padding: $i *$unit;
+}
+.py-#{$i}{
+    padding: $i * $unit 0;
+}
+}
