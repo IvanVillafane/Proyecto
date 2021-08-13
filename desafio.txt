@@ -1,2 +1,0 @@
-Cambie en index nombre,tambien en cada una de las secciones,en metadatos use diferentes descripciones para el SEO,agregue el 404 con fondo de gradietes y ancla al index principal,use un sitio para mejorar el SEO llamado https://www.serprobot.com/serp-check.php,todas las keyword modificadas,
-use "description" y "content" en <meta>
