@@ -128,15 +128,18 @@
         </section>
 
         <section> <!--Voy a empezar con una tienda en mi proyecto -->
-          <h2>Fade in Overlay</h2>
-          <p>Hover over the image to see the effect.</p>
-          
-          <div class="container">
-            <img src="./img/tienda-1.jpg" alt="Avatar" class="image">
-            <div class="overlay">
-              <div class="text">Hello World</div>
-            </div>
-          </div>
+       <div class="productos" style="margin-left: 3em;">
+      <div class="imagen-conteiner w-60" id="imageBox">
+        <img src="./img/iphone-1.jpg">
+      </div>
+    <div class="producto-small-img">
+      <img class="w-60" src="./img/iphone-1.jpg" onclick="myFuction(this)">
+      <img class="w-60" src="./img/iphone-1.jpg" onclick="myFuction(this)">
+      <img class="w-60" src="./img/iphone-1.jpg" onclick="myFuction(this)">
+
+
+    </div>
+  </div>
         </section>
         
        </main>
@@ -154,7 +157,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript">
+function myFuction(smallimg){var fullimg=document.getElementById("imageBox");
+fullimg.src=samallimg.src;}
 
+</script>
     
   </body>
 </html>
