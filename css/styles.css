@@ -46,13 +46,14 @@
 }
 
 body {
+  
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: #f7f7f7;
+  background-color: rgb(7, 7, 7);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -76,6 +77,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2;
 }
 
+#formulario{
+  background-color: #000000 1px solid !important;
+}
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -11504,7 +11508,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background-color: transparent;
+  background-color:black ;
   color: #ece6e6;
 }
 
@@ -11691,7 +11695,8 @@ ul {
 body {
   font-family: 'Source Code Pro', monospace;
   font-weight: 300;
-  color: #131212;
+  color: #776f6f;
+
 }
 
 .bg-dark {
@@ -11715,13 +11720,13 @@ h1, .h1 {
 }
 
 .img-1 {
-  background-image: url("..//img/jonas-leupe-dk4OR4Ap_c4-unsplash.jpg");
+  background-image: url("..//img/nosotros-1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .img-2 {
-  background-image: url("https://www.yorokobu.es/src/uploads/2017/08/IPHONE12.jpg");
+  background-image: url("../img/nosotros-2.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -11739,8 +11744,8 @@ h1, .h1 {
 }
 
 .contenedora {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 100;
+  width: 93%;
   margin: 0  auto;
   color: #000000;
 }
