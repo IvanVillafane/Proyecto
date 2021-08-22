@@ -77,8 +77,9 @@ $primary: $principal-color;  /*VOY A MODIFICARLES LAS VARIABLES NATIVAS DE BOOST
     box-sizing: border-box;
 }
 body{
-    background-color: $principal-color black 2px solid;
+    background-color: $principal-color black 0.125rem solid;
     color:rgb(255, 255, 255);
+    font-size: 1rem;
 }
 a{
     color:$secondary-color;
@@ -100,23 +101,19 @@ h3{
 
 
 .btn-primary{
-    border-bottom: 3ox solid rgba(146, 143, 143, 0.27);
+    border-bottom: 0.1875rem solid rgba(146, 143, 143, 0.27);
 }
 
 
 
 
 
-body{
-    background-color:black;
-    color:rgb(255, 253, 253);
-}
 
 
 hr {
     opacity: 1
     width $widthn1 
-    height 15px !important;
+    height 0.9375rem !important;
     background-color: linear-gradient(to right, #0497f8, #111b80)
     margin auto
 
@@ -124,8 +121,8 @@ hr {
 }
 
 .img-logo{
-    width: 200px ;
-    height: 200px;
+    width: 12.5rem ;
+    height: 12.5rem;
 }
 
 .servicio-fila{
@@ -134,7 +131,7 @@ hr {
 }
 
 
-@media(max-width:576px){
+@media(max-width:36rem){
     .icono-wrap{
         flex-wrap: wrap;
         justify-content: center !important;
@@ -142,40 +139,40 @@ hr {
     }
 }
 
-@media(max-width:1200px){
+@media(max-width:75rem){
     #local{
         flex-wrap: wrap;
-        padding-top: 30px;
+        padding-top: 1.875rem;
     }
     .wrapper{
         width: $widthn1;
         margin: auto;
-        padding-top: 50px;
+        padding-top: 3.125rem;
     }
 }
 
 
 .map{
     width: $widthn1;
-    height: 500px;
+    height: 31.25rem;
 }
 
 #local{
     background-color: $colorblanco;
-    padding-bottom: 300px;
+    padding-bottom: 18.75rem;
     display: flex;
     justify-content: center;
 }
 
 .wrapper {
     width: 50%;
-    margin-left: 100px;
-    padding-top: 150px;
+    margin-left: 6.25rem;
+    padding-top: 9.375rem;
 }
 
 #numeros-local div{
-    padding: 0 20px 0 0;
-    height: 48px;
+    padding: 0 1.25rem 0 0;
+    height: 3rem;
 }
 
 #numeros-local div:not(last-child){
@@ -183,7 +180,7 @@ hr {
 }
 
 #numeros-local div:not(:first-child){
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 #numeros-local p{
@@ -196,14 +193,14 @@ hr {
     background-color: #0497f8;
     color: $colorblanco;
     width: $widthn1 !important;
-    padding: 70px;
+    padding: 4.375rem;
 }
 
 .banner {color: $colorblanco;
     font-family: fantasy;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 40px;
+    font-size: 3.125rem;
+    font-weight: 56.25rem;
+    line-height: 2.5rem;
     margin-top: none;
     
     
@@ -212,17 +209,17 @@ h3 {
 
     color: $colornergro;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 50px;
-    padding: 5px;
+    font-size: 2.5rem;
+    font-weight: 56.25rem;
+    line-height: 3.125rem;
+    padding: 0.3125rem;
     text-align:start ;
 
 }
 
 .tipo{
     justify-content: end;
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 #descuentos{
@@ -236,7 +233,7 @@ h5{
     color:$colornergro;
     border: none;
     text-align: left;
-    height: 20px;
+    height: 1.25rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    font-size: 20px;
 }
 
@@ -293,14 +290,14 @@ ul {
 
 
 .img-logo{
-    width: 200px ;
-    height: 200px;
+    width: 12.5rem ;
+    height: 12.5rem;
 }
 
 body{
     background-color: #000000;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 300;
+    font-weight: 18.75rem;
     color: #ffffff;
 
 }
@@ -356,7 +353,7 @@ h1{
 }
 
 .contenedora{
-    max-width: 1000px;
+    max-width: 62.5rem;
     width:90%;
     margin:0  auto;
     color: #ffeaea;
@@ -364,22 +361,22 @@ h1{
 
 &.contenedora__card{
     color: #ffe6e6;
-    border-radius: 15px;
-    padding: 20px;
+    border-radius: 0.9375rem;
+    padding: 1.25rem;
     display: inline-flexbox;
     align-items: center;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     text-align: center;
 }
 
 &.contenedora__thumbnail{
-    width: 650;
-    height: 200px;
+    width: 40.625rem;
+    height: 12.5rem;
     background-color: #131212;
     color: #ffffff;
-    margin-right: 20px;
-    border-radius: 10px;
+    margin-right: 1.25rem;
+    border-radius: 0.625rem;
     overflow: hidden;
     display: inline-block;
 }
@@ -387,9 +384,9 @@ h1{
 &.contenedora__titulo{
     
     font-family: fantasy;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: normal;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
  }
 
@@ -399,22 +396,22 @@ h1{
 }
 &.contenedora__parrafo{
     background-color: #dad8d8;
-    line-height: 28px;
+    line-height: 1.75rem;
     color: #f8f8f8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }}
 
 .boton{
     border: none;
-    min-width: 180px;
-    height: 50px;
-    padding: 0 30px;
+    min-width: 11.25rem;
+    height: 3.125rem;
+    padding: 0 1.875rem;
     background: #131212;
     color: #ffffff;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 6.25rem;
     text-decoration: none;
     display: inline-flex;
     justify-content: space-between;
@@ -423,8 +420,8 @@ h1{
     transition: .3s ease all;
 }
 .boton__icono{
-    width: 100px;
-    font-size: 40px;
+    width: 6.25rem;
+    font-size: 2.5rem;
 }
 .boton:hover{
     background: burlywood;
@@ -432,23 +429,23 @@ h1{
 }
 .boton--absolute{
     position: absolute;
-    right: 50px;
-    bottom: -25px;
+    right: 3.125rem;
+    bottom: -1.5625rem;
 }
 
 .boton__texto{
-    font-weight: 600;
+    font-weight: 37.5rem;
 }
 
 .frase{
     text-align: center;
-    margin: 70px 0;
+    margin: 4.375rem 0;
 
 &.frase__texto{
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 1.25rem;
+    font-size: 1.875rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
+    font-weight: 37.5rem;
     font-style: italic;
 }
 
@@ -457,10 +454,10 @@ h1{
 /*Para los ultimos 3 botones*/
 .tecnicos{
     border-radius: 50%;
-    width: 250px;
-    flex: 0 1 200px;
+    width: 15.625rem;
+    flex: 0 1 12.5rem;
     text-align: center;
-     margin: 0 10px; 
+     margin: 0 0.625rem; 
 }
 
 .compras{
@@ -469,12 +466,12 @@ text-align: center;}
 .btn { 
     color: #fff;
     background-color: #3bb1f5;
-    padding: 8px 12px;
-    border: 1px solid #2d688b;
+    padding: 0.5rem 0.75rem;
+    border: 0.0625rem solid #2d688b;
     display: inline-block;
     text-decoration: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    border-radius: 0.25rem;
+    font-size: 16px;
     &.btn__icon {
         display: inline-block;
         margin-right: 4px;
@@ -487,13 +484,13 @@ text-align: center;}
         
         background-color: green;
         color: #ffffff;
-        border: 2px solid green;
+        border: 0.125rem solid green;
         border-radius: 0.25rem;
     }
     &.btn--danger {
         @include btn($principal-color,$secondary-color ,'true' );
         background-color: #f05654;
-        border: 1px solid #e00400; 
+        border: 0.0625rem solid #e00400; 
     }
     &:hover{
         @include btn($secondary-color,$terciary-color,'true');
