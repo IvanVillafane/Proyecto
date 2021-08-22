@@ -78,7 +78,7 @@ $primary: $principal-color;  /*VOY A MODIFICARLES LAS VARIABLES NATIVAS DE BOOST
 }
 body{
     background-color: $principal-color black 2px solid;
-    color:rgb(218, 218, 218);
+    color:rgb(255, 255, 255);
 }
 a{
     color:$secondary-color;
@@ -87,11 +87,13 @@ a{
 
 h2 {
     font-weight: bolder;
+    color: whitesmoke;
     font-size: size(6);/*Funciones remplazando*/
 }
 
 h3{
     font-weight: lighter;
+    color: #f8f8f8;
     font-size: size(3);/*Funciones remplazando*/
 }
 
@@ -107,7 +109,7 @@ h3{
 
 body{
     background-color:black;
-    color:rgb(243, 243, 243);
+    color:rgb(255, 253, 253);
 }
 
 
@@ -239,7 +241,8 @@ h5{
 }
 
 h4{
-font-family: Verdana, Geneva, Tahoma, sans-serif;}
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: #dad8d8;}
 
 
 /*APLICANDO PORPIEDADES DE SASS*/
@@ -298,7 +301,7 @@ body{
     background-color: #000000;
     font-family: 'Source Code Pro', monospace;
     font-weight: 300;
-    color: #ebd9d9;
+    color: #ffffff;
 
 }
 
@@ -307,7 +310,7 @@ body{
 }
 
 h1{
-    color: #f7f7f7;
+    color: #ffffff;
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
 }
@@ -340,7 +343,7 @@ h1{
 
 
 .btn{
-    color: #ffffff;
+    color: #fff9f9;
 
 
 }
@@ -356,12 +359,11 @@ h1{
     max-width: 1000px;
     width:90%;
     margin:0  auto;
-    color: #d1d1d1;
+    color: #ffeaea;
 
 
 &.contenedora__card{
-    background-color: #ff7e7e;
-    color: #fafafa;
+    color: #ffe6e6;
     border-radius: 15px;
     padding: 20px;
     display: inline-flexbox;
@@ -375,7 +377,7 @@ h1{
     width: 650;
     height: 200px;
     background-color: #131212;
-    color: #000000;
+    color: #ffffff;
     margin-right: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -396,9 +398,9 @@ h1{
 
 }
 &.contenedora__parrafo{
-    background-color: #ffffff;
+    background-color: #dad8d8;
     line-height: 28px;
-    color: #000000;
+    color: #f8f8f8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
