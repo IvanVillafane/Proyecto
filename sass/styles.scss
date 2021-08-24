@@ -516,3 +516,18 @@ text-align: center;}
 }
 
 
+img >.container-fluid{
+    width: 200px;
+    height: auto;
+  
+@media (min-width: 1000px) {    
+     flex:auto;
+     display: contents;
+     width: 300px;
+     justify-content: space-around;
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {     flex-wrap: wrap;
+}
+}

@@ -11824,7 +11824,6 @@ h1, .h1 {
 }
 
 .boton--absolute {
-  position: absolute;
   right: 50px;
   bottom: -25px;
 }
@@ -11862,6 +11861,7 @@ h1, .h1 {
 }
 
 .btn {
+  position: center;
   color: #fff;
   background-color: #3bb1f5;
   padding: 8px 12px;
