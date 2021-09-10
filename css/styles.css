@@ -4777,15 +4777,15 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 15, 15, 0.9);
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(51, 253, 61, 0.9);
+  color: rgba(3, 3, 3, 0.9);
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(255, 35, 255, 0.9);
+  color: rgba(173, 226, 26, 0.9);
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4798,8 +4798,8 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(24, 252, 4, 0.9);
-  border-color: rgba(237, 49, 243, 0.938);
+  color: rgba(2, 2, 2, 0.9);
+  border-color: rgba(0, 0, 0, 0.938);
 }
 
 py-24{
@@ -4822,7 +4822,7 @@ z-10{
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:hover,
 .navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(5, 5, 5, 0.9);
 }
 
 .navbar-dark .navbar-brand {
@@ -4830,7 +4830,7 @@ z-10{
 }
 
 .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-  color: #fff;
+  color: rgb(247, 244, 244);
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -11597,6 +11597,7 @@ body {
 .banner {
   color: #a09898 1 px;
   font-family: fantasy;
+  font-size: 60px;
   display: block;
   flex-wrap: wrap !important;
   justify-content: space-between;
@@ -11606,8 +11607,9 @@ body {
   margin-top: none;
 }
 
-h3, .h3 {
+h3, h3 {
   color: black 2px solid;
+  background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
   font-weight: 900;
@@ -11632,7 +11634,7 @@ h3, .h3 {
   display: flex;
 }
 
-h5, .h5 {
+h5,h5 {
   color: black 2px solid;
   border: none;
   text-align: left;
@@ -11641,7 +11643,7 @@ h5, .h5 {
   font-size: 20px;
 }
 
-h4, .h4 {
+h4,h4 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -11873,12 +11875,19 @@ h1, .h1 {
   font-size: 1rem;
 }
 
-.btn--success {
+.btn-success {
   background-color: green;
   border: 1px solid green;
+  text-decoration: none;
 }
 
-.btn--danger {
+
+.btn-warning{
+  text-decoration: none;
+}
+.btn-danger {
+  position: center;
+  text-decoration: none;
   background-color: #d84d4a;
   border: 1px solid #d84d4a;
 }
@@ -12559,12 +12568,13 @@ section .portafolio{
 .banner{
   position: relative;
   width: 100%;
+  font-size: 50px;
   height: calc(100vh - 50px);
   background-size: cover;
-  background-position: center;
   transition: all 1.s ease-in-out;
   background-image: url("../img/repair-1.jpg");
-  display: flex;
+  display:block;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -13721,3 +13731,245 @@ background-size:contain;
         --bs-gutter-y: 3rem;
       }
     }
+
+    
+
+/* Estilos de la seccion principal */
+
+#contentMain{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+main h1{
+    font-size: 1.7rem;
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem;
+}
+
+main p{
+    color: var(--black-text);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+main form{
+    display: flex;
+    justify-content: center;
+}
+
+main form button{
+    margin: 0 .5rem;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+
+footer{
+    background-color: var(--primary);
+    color: var(--white-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+@media(max-width:1020px){
+
+    nav h1{
+        margin-left: 1rem;
+    }
+
+  
+    .imagenMain{
+        display: none;
+    }
+}
+
+/*portafolio*/
+@media(max-width:1020px){
+
+  main .portafolio{
+      margin-left: 1rem;
+      display: none;
+  }
+}
+
+/*nuevos servicios Villafañe*/
+
+
+.services-section{
+  flex-wrap: nowrap;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+
+
+/*Cursos*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    overflow: hidden;
+    width: 15rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.060);
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+    color: var(--white-text);
+}
+
+.card h6{
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.card h2{
+    letter-spacing: .1rem;
+    margin: 1rem 0;
+
+}
+
+.top-row{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.top-row i{
+    font-size: 2rem;
+}
+
+.content{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content p{
+    font-size: .9rem;    
+}
+
+.button{
+    border-radius: 3rem;
+    color:black;
+    font-size: .8rem;
+    padding: .5rem .3rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+    border: .1rem solid rgba(255, 255, 255, 0.18);
+}
+
+/* media queries */
+
+@media (max-width:1030px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}

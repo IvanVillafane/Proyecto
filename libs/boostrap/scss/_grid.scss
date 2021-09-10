@@ -6,9 +6,9 @@
   .row {
     @include make-row();
 
-    > * {
+    
       @include make-col-ready();
-    }
+    
   }
 }
 

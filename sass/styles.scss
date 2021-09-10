@@ -257,7 +257,7 @@ ul{
         a {
             @include btn($terciary-color,$secondary-color,'true');
             box-shadow: $box-shadow;
-            color: red;
+            color: rgb(253, 247, 247);
             font-size:$font-size;
             text-decoration: none;
             transform:uppercase;
@@ -270,23 +270,7 @@ ul{
        
     }
 
-/*
-ul {
-    list-style: none;
-    li {
-        padding: 15;
-        display: inline-block;
-        a{
-            text-decoration: none;
-            font-size:$font-size;
-            color:$color-principal;
-        }
-        a:hover{
-            color: red;
-        }
-    }
-}
-*/
+
 
 
 .img-logo{
